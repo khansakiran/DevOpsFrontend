@@ -1,0 +1,702 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 120px;
+  flex-basis: 100%;
+}
+
+.navInner-1 {
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.navInner-2 {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  align-self: center;
+}
+
+.navInner-3 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-self: center;
+}
+
+.searchStyle {
+  color: rgb(220, 4, 4);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.searchBtn {
+  background-color: rgb(220, 4, 4);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.8;
+}
+
+.searchBtn:hover {
+  opacity: 1;
+}
+
+.logoStyle {
+  height: 10%;
+  width: 10%;
+}
+
+.cartStyle {
+  display: flex;
+  height: 22px;
+  width: 22px;
+  margin-right: 30px;
+  align-items: center;
+}
+
+.profileStyle {
+  display: flex;
+  height: 22px;
+  width: 22px;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color:rgb(249, 249, 249);
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(220, 4, 4);
+  padding: 10px;
+  border-radius: 12px;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btnMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+
+.productMain_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 270px;
+  border: 2px solid rgb(242, 232, 232);
+  border-radius: 12px;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  background-color: #fafafa;
+}
+
+.card:hover {
+  opacity: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.productMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+
+.Reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerMain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.formRegister {
+  border: 2px solid rgb(195, 193, 193);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.inputRegister {
+  padding: 12px;
+  width: 90%;
+  margin: 10px;
+  border-radius: 4px;
+  border: 2px solid rgb(21, 19, 19);
+  border-top-color: rgb(5, 5, 5);
+}
+
+.inputLabel {
+  padding: 12px;
+  width: 90%;
+  margin: 8px;
+  border-radius: 4px;
+  
+}
+
+.inputRegister:focus {
+  border: 2px solid red;
+  opacity: 1;
+}
+
+.btnRegister {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.btnRegisterStyle {
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(220, 4, 4);
+  color: white;
+  font-size: 18px;
+  border-radius: 13px;
+  margin-left: 30px;
+  margin-right: 30px;
+  opacity: 0.8;
+}
+
+.btnLoginStyle {
+  padding-left: 155px;
+  padding-right: 155px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(220, 4, 4);
+  color: white;
+  font-size: 18px;
+  border-radius: 13px;
+  margin-left: 30px;
+  margin-right: 30px;
+  opacity: 0.8;
+}
+
+.btnRegisterStyle:hover {
+  opacity: 1;
+}
+
+.pass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.passDetails {
+  color: red;
+  font-weight: normal;
+}
+
+.prodDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: 2px solid rgb(195, 193, 193);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+.prodDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 73%;
+}
+.ProductImg {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.vl {
+  border-left: 1px solid rgb(131, 135, 131);
+  height: 300px;
+  margin-right: 12px;
+}
+
+.hl {
+  border-bottom: 1px solid rgb(131, 135, 131);
+  width: 320px;
+}
+
+.details {
+  margin-right: 60px;
+  left: 20%;
+  right: 20%;
+}
+
+.prodName {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.reviews {
+  color: red;
+  font-weight: normal;
+}
+
+.reviews:hover {
+  text-decoration: underline;
+}
+
+.price {
+  font-weight: normal;
+  color: red;
+}
+
+.stock {
+  font-weight: normal;
+}
+
+.btnBrowse {
+  color: white;
+  background-color: rgb(220, 4, 4);
+  padding: 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: 40%;
+  opacity: 0.8;
+}
+
+.btnBrowse:hover {
+  opacity: 1;
+}
+
+.quantityBtn {
+  padding: 10px;
+  margin: 2px;
+  border-radius: 13px;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.quantityBtn:hover {
+  opacity: 1;
+}
+
+.quantity {
+  color: rgb(220, 4, 4);
+  font-weight: normal;
+}
+
+.btnCount {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 13px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.Ratings {
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnReview {
+  color: white;
+  background-color: rgb(220, 4, 4);
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.btnReview:hover {
+  opacity: 1;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+}
+
+.accountBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.accountBox-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.accountBox-2 {
+  flex: 2;
+  color: red;
+  font-weight: normal;
+}
+
+.accountBox-3 {
+  flex: 2;
+}
+
+.horizontalLine {
+  border-bottom: 1px solid rgb(131, 135, 131);
+  width: 100%;
+}
+
+.changepass {
+  color: red;
+  font-weight: normal;
+}
+
+.payments {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cvc {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardImg {
+  width: 100%;
+  height: 150px;
+}
+
+.cardInput {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.cardInputCVC {
+  margin-left: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.CardBtn {
+  color: white;
+  background-color: rgb(220, 4, 4);
+  justify-content: center;
+  padding: 12px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.CardBtn:hover {
+  opacity: 1;
+}
+
+.cardHeading {
+  color: rgb(220, 4, 4);
+  font-weight: normal;
+}
+
+.verticalCardLine {
+  border-left: 1px solid rgb(131, 135, 131);
+  height: 310px;
+  margin-right: 22px;
+  margin-left: 12px;
+}
+
+.footerMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(220, 4, 4);
+  color: white;
+  margin-top: 90px;
+}
+
+.footerInner {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  font-weight: normal;
+}
+
+.listStyle {
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.subscribeInput {
+  padding: 12px;
+}
+
+.subscribeBtn {
+  padding: 12px;
+  background-color: rgb(220, 4, 4);
+  color: white;
+  opacity: 0.8;
+}
+
+.subscribeBtn:hover {
+  background-color: rgb(247, 59, 59);
+}
+
+.cartMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shoppingCartMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.cartBtn {
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 20px;
+  color: white;
+  background-color: rgb(247, 59, 59);
+  opacity: 0.8;
+}
+
+.cartBtn:hover {
+  opacity: 1;
+}
+
+.CartImg {
+  height: 100px;
+  width: 140px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.prodName {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.cartProdName {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(131, 135, 131);
+  justify-content: space-around;
+}
+
+.lineOrder {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(254, 254, 254);
+  justify-content: space-around;
+}
+
+.cartMainBox {
+  justify-content: space-around;
+  border: 2px solid rgb(195, 193, 193);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.cartInfo {
+  color: red;
+}
+
+.cartInfoInner {
+  font-weight: normal;
+}
+.ordersummary__container {
+  display: flex;
+  justify-content: center;
+}
+.OrderSummary {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid red;
+  background-color: rgb(220, 4, 4);
+  color: white;
+  border-radius: 16px;
+}
+
+.order {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.CreditCardImg {
+  height: 260px;
+  width: 100%;
+}
+
+.btnLogStyle {
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  border-radius: 13px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.NavLink {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.NavLink:hover {
+  color: black;
+}
+
+.checkOutBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.orderDetails_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.wishlistStyle {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
